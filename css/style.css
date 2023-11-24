@@ -554,8 +554,6 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   font-weight: 400;
   font-size: 18px;
   color: #FFFFFF;
-  padding-right: 40px;
-  background: url("../images/Union.svg") right no-repeat;
 }
 .calc-download-button:hover {
   background-color: transparent;
@@ -566,7 +564,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
 }
 .calc-download-button:hover span {
   color: #B49378;
-  background: url("../images/Union-braun.svg") right no-repeat;
+
 }
 @media (max-width: 1346px) {
   .calc-download-button {
@@ -575,11 +573,11 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   .calc-download-button span {
     font-size: 16px;
     padding-right: 30px;
-    background: url('../images/Union.svg') 100% 47%/ 15px 15px no-repeat;
+
   }
   .calc-download-button:hover span {
   color: #B49378;
-  background: url("../images/Union-braun.svg") 100% 47%/ 15px 15px no-repeat;
+
 }
 }
 @media (max-width: 992px) {
@@ -1101,7 +1099,7 @@ ul li {
 }
 
 .cards {
-  max-width: 301px;
+  max-width:33%;
   min-height: 258px;
   background: #F3F1EC;
   border-radius: 40px;

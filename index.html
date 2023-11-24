@@ -85,7 +85,7 @@
 				document.addEventListener('DOMContentLoaded', t_setvisRecs);
 			}
 		})();</script>
-	<script src="../../Downloads/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body class="t-body"
@@ -1036,20 +1036,20 @@
 											</div>
 										</div>
 									</div>
-									<div class="calc-container__slide cards swiper-slide" style="display: none;">
-										<div class="cards__card-title">
-											<div class="cards__title">Планетарна грамотність</div>
-											<div class="cards__subtitle">Планетарне призначення людини</div>
-										</div>
-										<div class="cards__calc">
-											<div class="cards__bot">
-												<span class="cards__circle cards__circle_alone">
-													<text id="otp-otp-pl" transform="translate(8.24 19.42)"
-														style="font-size: 14px;fill: #382600;font-family: 'Manrope', sans-serif;" />
-												</span>
-											</div>
-										</div>
-									</div>
+<!--									<div class="calc-container__slide cards swiper-slide" style="display: none;">-->
+<!--										<div class="cards__card-title">-->
+<!--											<div class="cards__title">Планетарна грамотність</div>-->
+<!--											<div class="cards__subtitle">Планетарне призначення людини</div>-->
+<!--										</div>-->
+<!--										<div class="cards__calc">-->
+<!--											<div class="cards__bot">-->
+<!--												<span class="cards__circle cards__circle_alone">-->
+<!--													<text id="otp-otp-pl" transform="translate(8.24 19.42)"-->
+<!--														style="font-size: 14px;fill: #382600;font-family: 'Manrope', sans-serif;" />-->
+<!--												</span>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--									</div>-->
 								</div>
 								<button type="button" class="addbuttonp swiper-button-prev"></button>
 								<button type="button" class="addbuttonn swiper-button-next"></button>
@@ -1116,7 +1116,7 @@
 									nextEl: '.swiper-button-next',
 								},
 								speed: 800,
-								slidesPerView: 2,
+								slidesPerView: 3,
 								simulateTouch: true,
 								spaceBetween: 30,
 								// Брейкпоінти
@@ -1215,11 +1215,11 @@
 										x = document
 												.querySelector("#otp-otp-du")
 												.attributes[1].value.split(" ")[0]
-												.match(/[0-9/.]+/),
-										S = document
-												.querySelector("#otp-otp-pl")
-												.attributes[1].value.split(" ")[0]
 												.match(/[0-9/.]+/);
+										// S = document
+										// 		.querySelector("#otp-otp-pl")
+										// 		.attributes[1].value.split(" ")[0]
+										// 		.match(/[0-9/.]+/)
 								function q() {
 									let q, f;
 									for (let e = 1; e < 23; e++)
@@ -1333,13 +1333,13 @@
 													: ((q = +document.querySelector("#otp-otp-du").scrollHeight / 3),
 															(f = document.querySelector("#otp-otp-du").attributes[1].value.split(" ")),
 															(document.querySelector("#otp-otp-du").attributes[1].value = `translate(${+(x - 1.5)} ${+f[1].match(/[0-9/.]+/)})`)),
-											1 == document.querySelector("#otp-otp-pl").textContent.length
-													? ((q = +document.querySelector("#otp-otp-pl").scrollHeight / 3),
-															(f = document.querySelector("#otp-otp-pl").attributes[1].value.split(" ")),
-															(document.querySelector("#otp-otp-pl").attributes[1].value = `translate(${+S + q / 2 - 1.5} ${+f[1].match(/[0-9/.]+/)})`))
-													: ((q = +document.querySelector("#otp-otp-pl").scrollHeight / 3),
-															(f = document.querySelector("#otp-otp-pl").attributes[1].value.split(" ")),
-															(document.querySelector("#otp-otp-pl").attributes[1].value = `translate(${+(S - 1.5)} ${+f[1].match(/[0-9/.]+/)})`)),
+											// 1 == document.querySelector("#otp-otp-pl").textContent.length
+											// 		? ((q = +document.querySelector("#otp-otp-pl").scrollHeight / 3),
+											// 				(f = document.querySelector("#otp-otp-pl").attributes[1].value.split(" ")),
+											// 				(document.querySelector("#otp-otp-pl").attributes[1].value = `translate(${+S + q / 2 - 1.5} ${+f[1].match(/[0-9/.]+/)})`))
+											// 		: ((q = +document.querySelector("#otp-otp-pl").scrollHeight / 3),
+											// 				(f = document.querySelector("#otp-otp-pl").attributes[1].value.split(" ")),
+											// 				(document.querySelector("#otp-otp-pl").attributes[1].value = `translate(${+(S - 1.5)} ${+f[1].match(/[0-9/.]+/)})`)),
 											(q = 0),
 											(f = 0);
 								}
@@ -1780,7 +1780,7 @@
 													document.querySelector("#otp-otp-du").textContent = Gt;
 													let Jt = Gt + z;
 													Jt > 22 && (Jt = f(Jt));
-													(document.querySelector("#otp-otp-pl").textContent = Jt),
+													// (document.querySelector("#otp-otp-pl").textContent = Jt),
 															(document.querySelector(".physics-row-1").textContent = t),
 															(document.querySelector(".energy-row-1").textContent = n),
 															(document.querySelector(".key-row-1").textContent = g),
@@ -2020,7 +2020,7 @@
 										(document.querySelector("#calc-otp-woman3").textContent = 0),
 										(document.querySelector("#otp-otp-du").textContent = 0),
 										(document.querySelector("#otp-otp-du").textContent = 0),
-										(document.querySelector("#otp-otp-pl").textContent = 0),
+										// (document.querySelector("#otp-otp-pl").textContent = 0),
 										(document.querySelector(".physics-row-1").textContent = 0),
 										(document.querySelector(".energy-row-1").textContent = 0),
 										(document.querySelector(".key-row-1").textContent = 0),
@@ -2178,7 +2178,7 @@
 								(document.querySelector("#calc-otp-woman3").textContent = 0),
 								(document.querySelector("#otp-otp-du").textContent = 0),
 								(document.querySelector("#otp-otp-du").textContent = 0),
-								(document.querySelector("#otp-otp-pl").textContent = 0),
+								// (document.querySelector("#otp-otp-pl").textContent = 0),
 								(document.querySelector(".physics-row-1").textContent = 0),
 								(document.querySelector(".energy-row-1").textContent = 0),
 								(document.querySelector(".key-row-1").textContent = 0),
